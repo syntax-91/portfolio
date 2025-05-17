@@ -1,4 +1,6 @@
+import { Contacts } from './components/organisms/contacts'
 import { Header } from './components/organisms/Header'
+import { Stack } from './components/organisms/Stack'
 import { Wrapper } from './components/organisms/wrapper'
 
 function App() {
@@ -6,6 +8,8 @@ function App() {
 		<div>
 			<Header />
 			<Wrapper />
+			<Stack />
+			<Contacts />
 		</div>
 	)
 }
