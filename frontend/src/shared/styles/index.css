@@ -22,7 +22,7 @@ html {
 
 a {
 	font-weight: 500;
-	color: #646cff;
+	color: #bdbdc0;
 	cursor: pointer;
 	text-decoration: inherit;
 }
@@ -58,4 +58,9 @@ button:hover {
 button:focus,
 button:focus-visible {
 	outline: 4px auto -webkit-focus-ring-color;
+}
+
+i {
+	color: rgb(13, 13, 223);
+	cursor: pointer;
 }

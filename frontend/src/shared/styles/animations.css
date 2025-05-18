@@ -1,0 +1,36 @@
+/* fn - fadeIn */
+
+.fn {
+	transition: all 0.3s ease-out;
+	animation: fn 0.1s ease-out;
+}
+
+@keyframes fn {
+	0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+	100% {
+		opacity: 1;
+		transform: scaleX(1);
+	}
+}
+
+/* rl - right -> left || не работает: пока что */
+
+.rl {
+	transition: all 0.3s ease-out;
+	animation: rl 0.1s ease-out;
+	position: relative;
+}
+
+@keyframes rl {
+	0% {
+		opacity: 0;
+		left: 50px;
+	}
+	100% {
+		opacity: 1;
+		left: 0px;
+	}
+}

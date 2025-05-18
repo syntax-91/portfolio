@@ -45,12 +45,18 @@ export function Stack() {
 		<div ref={boxRef} className='mx-auto text-center mt-20' id='Stack'>
 			<h3>Stack</h3>
 
-			<div className='flex w-[80%] justify-between mx-auto mt-10'>
-				<div className='transition-all hover:scale-110'>
+			<div className='flex flex-wrap gap-10 w-[80%] md:w-[90%] justify-between mx-auto mt-10'>
+				<div
+					className='transition-all hover:scale-110
+				|| hidden lg:flex overflow-x-auto'
+				>
 					<SiHtml5 size={50} />
 				</div>
 
-				<div className='transition-all hover:scale-110'>
+				<div
+					className='transition-all hover:scale-110
+				|| hidden lg:flex'
+				>
 					<SiCss3 size={50} />
 				</div>
 
@@ -70,7 +76,10 @@ export function Stack() {
 					<SiNodedotjs size={50} />
 				</div>
 
-				<div className='transition-all hover:scale-110'>
+				<div
+					className='transition-all hover:scale-110
+				|| hidden lg:flex'
+				>
 					<SiExpress size={50} />
 				</div>
 
@@ -82,7 +91,10 @@ export function Stack() {
 					<SiAxios size={50} />
 				</div>
 
-				<div className='transition-all hover:scale-110'>
+				<div
+					className='transition-all hover:scale-110
+				|| hidden lg:flex'
+				>
 					<SiReacthookform size={50} />
 				</div>
 
