@@ -9,3 +9,8 @@
 .shw {
 	box-shadow: 0 0 5px #fff;
 }
+
+.bgb {
+	background-color: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(30px);
+}

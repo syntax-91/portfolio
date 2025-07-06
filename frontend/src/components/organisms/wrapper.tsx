@@ -2,7 +2,7 @@ export function Wrapper() {
 	return (
 		<div
 			className='w-[95%] md:w-[70%] mx-auto flex justify-between ttb
-		items-center  mt-30 gap-10'
+		items-center  mt-30 gap-10 || '
 			id='About_me'
 		>
 			{/* block 1 */}
