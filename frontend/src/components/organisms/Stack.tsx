@@ -1,6 +1,3 @@
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/all'
-import { useEffect, useRef } from 'react'
 import {
 	SiAxios,
 	SiCss3,
@@ -16,33 +13,8 @@ import {
 } from 'react-icons/si'
 
 export function Stack() {
-	const boxRef = useRef(null)
-
-	useEffect(() => {
-		gsap.registerPlugin(ScrollTrigger)
-
-		gsap.fromTo(
-			boxRef.current,
-			{ x: 100, opacity: 0 },
-			{
-				x: 0,
-				ease: 'power2.out',
-				opacity: 1,
-				duration: 0.9,
-				//Scroll Trigger
-				scrollTrigger: {
-					trigger: boxRef.current,
-					start: 'top 90%',
-					toggleActions: 'play none none none',
-				},
-			}
-		)
-
-		return () => ScrollTrigger.getAll().forEach(el => el.kill())
-	}, [])
-
 	return (
-		<div ref={boxRef} className='mx-auto text-center mt-20' id='Stack'>
+		<div className='mx-auto text-center mt-20 rtl' id='Stack'>
 			<h3>Stack</h3>
 
 			<div className='flex flex-wrap gap-10 w-[80%] md:w-[90%] justify-between mx-auto mt-10'>

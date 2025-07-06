@@ -1,22 +1,8 @@
-import gsap from 'gsap'
-import { useEffect, useRef } from 'react'
-
 export function Wrapper() {
-	const wrapperRef = useRef(null)
-
-	useEffect(() => {
-		gsap.fromTo(
-			wrapperRef.current,
-			{ opacity: 0, y: -30 },
-			{ opacity: 1, y: 0 }
-		)
-	}, [])
-
 	return (
 		<div
-			ref={wrapperRef}
-			className='w-[95%] md:w-[70%] mx-auto flex justify-between
-		items-center  mt-30 gap-10 || opacity-0'
+			className='w-[95%] md:w-[70%] mx-auto flex justify-between ttb
+		items-center  mt-30 gap-10'
 			id='About_me'
 		>
 			{/* block 1 */}
@@ -30,13 +16,13 @@ export function Wrapper() {
 
 				<p>
 					- начинающий фронтенд-разработчик, сфокусированный на чистой
-					архитектуре и переиспользуемости. Пишу UI через Atomic Design, строю
-					интерфейсы из компонентов, легко масштабирующихся и поддерживаемых.
-					Использую <a>React</a>, TailwindCSS, <i>GSAP</i> для анимаций и Axios
-					для работы с API. Backend покрываю на <i>Express.js</i>, когда нужно
-					быстро поднять сервер. Работаю с хуками, маршрутизацией через{' '}
-					<i>React Router DOM</i>, оптимизирую через <i>react.lazy</i> и на
-					основе лёгких библиотек.
+					архитектуре и переиспользуемости. Пишу UI через <i>Atomic Design</i>,
+					строю интерфейсы из компонентов, легко масштабирующихся и
+					поддерживаемых. Использую <i>React</i>, <i>TailwindCSS</i>,{' '}
+					<i>GSAP</i> для анимаций и Axios для работы с API. Backend покрываю на{' '}
+					<i>Express.js</i>, когда нужно быстро поднять сервер. Работаю с
+					хуками, маршрутизацией через <i>React Router DOM</i>, оптимизирую
+					через <i>react.lazy</i> и на основе лёгких библиотек.
 				</p>
 			</div>
 

@@ -1,0 +1,56 @@
+.modal-container {
+	width: 100vw;
+	height: 100vh;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	background-color: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(20px);
+
+	z-index: 100;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.progressBar {
+	position: absolute;
+	top: 0;
+
+	max-width: 93%;
+
+	height: 2px;
+
+	margin-bottom: 10px;
+	border-radius: 100%;
+
+	background-color: rgb(155, 152, 152);
+	animation: progress var(--modalProgressDuration) linear forwards;
+}
+
+@keyframes progress {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+
+.modal {
+	border: 1px solid #6b6969;
+	border-radius: 20px;
+	padding: 5px;
+	padding-top: 15px;
+
+	max-width: 90%;
+
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(80px);
+}

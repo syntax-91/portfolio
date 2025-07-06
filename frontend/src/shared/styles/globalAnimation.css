@@ -1,0 +1,77 @@
+.ltr {
+	animation: ltr 0.5s ease forwards;
+	position: relative;
+}
+
+.rtl {
+	animation: rtl 0.5s ease-in-out forwards;
+	position: relative;
+}
+
+.ttb {
+	animation: ttb 0.5s ease-in-out forwards;
+	position: relative;
+}
+
+.up {
+	animation: up 0.5s ease-in-out forwards;
+	position: relative;
+}
+
+.fn {
+	animation: fn 0.3s ease forwards;
+}
+
+@keyframes fn {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+@keyframes up {
+	from {
+		top: 30px;
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+		top: 0px;
+	}
+}
+
+@keyframes ltr {
+	from {
+		left: -30px;
+		opacity: 0;
+	}
+	to {
+		left: 0px;
+		opacity: 1;
+	}
+}
+
+@keyframes rtl {
+	from {
+		left: 30px;
+		opacity: 0;
+	}
+	to {
+		left: 0px;
+		opacity: 1;
+	}
+}
+
+@keyframes ttb {
+	from {
+		top: -30px;
+		opacity: 0;
+	}
+	to {
+		top: 0px;
+		opacity: 1;
+	}
+}

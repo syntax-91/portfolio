@@ -12,6 +12,10 @@ export function OptionsNav() {
 			<a className='block md:flex mt-4 md:mt-0 text-center' href='#Contacts'>
 				контакты
 			</a>
+
+			<a className='block md:flex mt-4 md:mt-0 text-center' href='#projects'>
+				проекты
+			</a>
 		</div>
 	)
 }

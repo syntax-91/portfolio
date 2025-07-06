@@ -3,3 +3,9 @@
 .cp {
 	cursor: pointer;
 }
+
+/* shadow white */
+
+.shw {
+	box-shadow: 0 0 5px #fff;
+}
