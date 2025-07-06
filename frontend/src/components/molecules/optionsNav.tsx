@@ -42,7 +42,7 @@ export function OptionsNav() {
 
 			<a
 				onClick={handleClick}
-				className='block md:flex mt-4 md:mt-0 text-center'
+				className='block md:hidden mt-4 md:mt-0 text-center'
 			>
 				закрыть
 			</a>
