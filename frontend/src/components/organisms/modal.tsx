@@ -17,14 +17,10 @@ export interface ModalProps {
 }
 
 export function Modal({
-	type = 'info',
-	title = 'title',
-	msg = 'привит тута типа карочи абични текст',
 	titleBtn = 'хорошо',
 	theme = 'dark',
 	autoClose = false,
 	autoCloseDuration = 3000,
-	...rest
 }: ModalProps) {
 	//
 	const handleClick = () => {
