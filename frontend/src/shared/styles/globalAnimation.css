@@ -22,6 +22,20 @@
 	animation: fn 0.3s ease forwards;
 }
 
+.fade-out,
+.fo {
+	animation: fo 0.3s ease forwards;
+}
+
+@keyframes fo {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(0);
+	}
+}
+
 @keyframes fn {
 	from {
 		transform: scale(0);

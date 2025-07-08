@@ -2,6 +2,7 @@ import { makeAutoObservable } from 'mobx'
 
 class ModalStore {
 	isOpen = false
+	isClosing = false
 
 	title = ''
 	msg = ''
@@ -10,8 +11,12 @@ class ModalStore {
 		makeAutoObservable(this)
 	}
 
-	setIsOpen(value: boolean) {
-		this.isOpen = value
+	close() {
+		this.isClosing = true
+
+		setTimeout(() => {
+			;(this.isOpen = false), (this.isClosing = false)
+		}, 300)
 	}
 
 	run(title: string, msg: string) {

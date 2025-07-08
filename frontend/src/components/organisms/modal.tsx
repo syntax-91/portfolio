@@ -1,3 +1,5 @@
+import clsx from 'clsx'
+import { observer } from 'mobx-react-lite'
 import { useEffect, useRef } from 'react'
 import s from '../../shared/styles/modalStyles.module.css'
 import { modalStore } from '../../store/modalStore'
@@ -16,7 +18,7 @@ export interface ModalProps {
 	autoCloseDuration?: number
 }
 
-export function Modal({
+function Modal({
 	titleBtn = 'хорошо',
 	theme = 'dark',
 	autoClose = false,
@@ -24,7 +26,7 @@ export function Modal({
 }: ModalProps) {
 	//
 	const handleClick = () => {
-		modalStore.setIsOpen(false)
+		modalStore.close()
 	}
 
 	const refModalProgress = useRef<HTMLDivElement>(null)
@@ -39,18 +41,21 @@ export function Modal({
 
 		let t: number
 
-		t = setTimeout(() => modalStore.setIsOpen(false), autoCloseDuration)
+		t = setTimeout(() => modalStore.close(), autoCloseDuration)
 
 		return () => clearTimeout(t)
 	}, [])
 
 	return (
 		<div
-			className={`// 
+			className={clsx(
+				`// 
 			// fn
 			${s[theme + '_c']}
 			${s['modal-container']}  
-		`}
+		`,
+				modalStore.isClosing === true && 'fade-out'
+			)}
 		>
 			<div //
 				className={`
@@ -79,3 +84,5 @@ export function Modal({
 		</div>
 	)
 }
+
+export default observer(Modal)
