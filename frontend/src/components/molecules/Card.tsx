@@ -22,7 +22,7 @@ export function Card({
 	return (
 		<div
 			style={{ width: w, height: h }}
-			className={`p-10 rounded-2xl shw || transition-transform m-5 || hover:opacity-70`}
+			className={`p-10 rounded-2xl shw || transition-transform m-5 || hover:opacity-70 bg-[#000]/50`}
 		>
 			{/* IMG */}
 			<div className='rounded-full w-[100px] h-[100px] bg-white/10 mx-auto'>

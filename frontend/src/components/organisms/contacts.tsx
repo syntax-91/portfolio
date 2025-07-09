@@ -41,11 +41,11 @@ export function Contacts() {
 			{/* Github */}
 			<div
 				onClick={() => (location.href = 'https://github.com/syntax-91')}
-				className='border border-[#444] w-[220px] h-[50px]
-				mx-auto rounded-2xl flex items-center  hover:bg-white/5'
+				className='w-[130px] h-[50px] bg-[#000]
+				mx-auto rounded-2xl flex items-center justify-between hover:bg-white/10'
 			>
 				<div
-					className='w-[40%] mx-auto flex items-center
+					className='w-[70%] mx-auto flex items-center
 				justify-between'
 				>
 					<SiGithub size={30} />
@@ -54,19 +54,9 @@ export function Contacts() {
 			</div>
 
 			{/* telegram */}
-			<div
-				onClick={() => (location.href = 'https://t.me/syntax_real')}
-				className='border border-[#444] mt-1 w-[220px] h-[50px]
-				mx-auto rounded-2xl flex items-center  hover:bg-white/5
-				cursor-pointer'
-			>
-				<div
-					className='w-[45%] mx-auto flex items-center
-				justify-between gap-1.5'
-				>
-					<SiTelegram size={35} />
-					<p>Telegram</p>
-				</div>
+			<div className='w-[130px] mx-auto h-[50px] flex justify-center items-center gap-2 rounded-2xl bg-blue-700 mt-2 hover:bg-blue-900'>
+				<SiTelegram size={30} />
+				<p>Telegram</p>
 			</div>
 		</div>
 	)
