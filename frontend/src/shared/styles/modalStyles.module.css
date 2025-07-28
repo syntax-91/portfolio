@@ -8,8 +8,7 @@
 	right: 0;
 	bottom: 0;
 
-	background-color: rgba(0, 0, 0, 0.2);
-	backdrop-filter: blur(20px);
+	background-color: rgba(0, 0, 0, 0.5);
 
 	z-index: 100;
 
@@ -44,13 +43,10 @@
 }
 
 .modal {
-	border: 1px solid #6b6969;
-	border-radius: 20px;
-	padding: 5px;
+	border-radius: 30px;
+	border: 1px solid #2f2e2e;
+	padding: 8px;
 	padding-top: 15px;
 
 	max-width: 90%;
-
-	background-color: rgba(0, 0, 0, 0.5);
-	backdrop-filter: blur(80px);
 }

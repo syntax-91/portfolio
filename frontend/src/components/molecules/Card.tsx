@@ -1,3 +1,5 @@
+import { themeConfig } from '../../shared/configs/themeConfig'
+
 interface props {
 	w?: number
 	h?: number
@@ -10,9 +12,6 @@ interface props {
 }
 
 export function Card({
-	w = 135,
-	h = 200,
-
 	handleClick,
 
 	img = '',
@@ -21,19 +20,21 @@ export function Card({
 }: props) {
 	return (
 		<div
-			style={{ width: w, height: h }}
-			className={`p-10 rounded-2xl shw || transition-transform m-5 || hover:opacity-70 bg-[#000]/50`}
+			style={{
+				background: themeConfig.themes.dark.bb,
+			}}
+			className={`py-10 px-5 rounded-4xl  || transition-transform m-5 || hover:opacity-70 w-[230px]`}
 		>
 			{/* IMG */}
 			<div className='rounded-full w-[100px] h-[100px] bg-white/10 mx-auto'>
-				<img src={img} alt=' ' className='rounded-full' />
+				<img src={img} className='rounded-full' />
 			</div>
 
-			<h2 className='text-center my-5 text-2xl font-black'>{title}</h2>
+			<h2 className=' text-center my-5 text-2xl font-black'>{title}</h2>
 
-			<p className='text-center'>{description}</p>
+			<p className=' wrap-anywhere  text-center'>{description}</p>
 
-			<div className=''>
+			<div className='flex justify-center'>
 				<button onClick={handleClick} className='my-2 mb-auto'>
 					подробнее
 				</button>

@@ -6,7 +6,7 @@ export function OptionsNav() {
 	}
 
 	return (
-		<div onClick={handleClick} className='block md:flex  gap-10'>
+		<div onClick={handleClick} className='block md:flex fn gap-10'>
 			{/* ********* */}
 			<a
 				onClick={handleClick}

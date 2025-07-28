@@ -1,8 +1,13 @@
+import { themeConfig } from '../../shared/configs/themeConfig'
+
 export function Wrapper() {
 	return (
 		<div
-			className='w-[95%] md:w-[70%] mx-auto flex justify-between ttb
-		items-center  mt-30 gap-10 || '
+			style={{
+				background: themeConfig.themes.dark.bb,
+			}}
+			className='w-[95%] md:w-[70%] mx-auto flex justify-between ttb py-5
+		items-center  mt-10 md:mt-30 gap-10 md:px-8 rounded-4xl'
 			id='About_me'
 		>
 			{/* block 1 */}
@@ -25,12 +30,9 @@ export function Wrapper() {
 			</div>
 
 			{/* block 2 */}
-			<div
-				className='bg-white/40 w-[300px] h-[300px] border
-			 border-black/90 rounded || hidden md:flex
-			 '
-			>
+			<div className=' w-[300px] h-[300px] hidden md:flex cp hover:scale-105'>
 				<img
+					className='rounded-4xl'
 					src='https://avatars.githubusercontent.com/u/190104690?s=400&u=77ff2428ce97bf7aa7fbef189de603b8a4da0a44&v=4'
 					alt='syntax'
 				/>

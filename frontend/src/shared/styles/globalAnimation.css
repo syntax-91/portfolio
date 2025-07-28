@@ -27,6 +27,22 @@
 	animation: fo 0.3s ease forwards;
 }
 
+.scale-up {
+	animation: scUP 0.3s ease forwards;
+}
+
+@keyframes scUP {
+	from {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	to {
+		opacity: 0;
+		transform: scale(1.5);
+	}
+}
+
 @keyframes fo {
 	from {
 		transform: scale(1);

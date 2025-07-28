@@ -11,13 +11,19 @@ import {
 	SiReactrouter,
 	SiTypescript,
 } from 'react-icons/si'
+import { themeConfig } from '../../shared/configs/themeConfig'
 
 export function Stack() {
 	return (
 		<div className='mx-auto text-center mt-20 rtl' id='Stack'>
 			<h3>Stack</h3>
 
-			<div className='flex flex-wrap gap-10 w-[80%] md:w-[90%] justify-between mx-auto mt-10'>
+			<div
+				style={{
+					background: themeConfig.themes.dark.bb,
+				}}
+				className='flex flex-wrap gap-10 w-[90%] md:w-[70%] justify-between mx-auto mt-10 py-5 px-5 rounded-4xl'
+			>
 				<div
 					className='transition-all hover:scale-110
 				|| hidden lg:flex overflow-x-auto'
