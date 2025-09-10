@@ -1,107 +1,116 @@
 .ltr {
-	animation: ltr 0.5s ease forwards;
-	position: relative;
+  animation: ltr 0.5s ease forwards;
+  position: relative;
 }
 
 .rtl {
-	animation: rtl 0.5s ease-in-out forwards;
-	position: relative;
+  animation: rtl 0.5s ease-in-out forwards;
+  position: relative;
 }
 
 .ttb {
-	animation: ttb 0.5s ease-in-out forwards;
-	position: relative;
+  animation: ttb 0.5s ease-in-out forwards;
+  position: relative;
 }
 
 .up {
-	animation: up 0.5s ease-in-out forwards;
-	position: relative;
+  animation: up 0.5s ease-in-out forwards;
+  position: relative;
 }
 
 .fn {
-	animation: fn 0.3s ease forwards;
+  animation: fn 0.3s ease forwards;
 }
 
 .fade-out,
 .fo {
-	animation: fo 0.3s ease forwards;
+  animation: fo 0.3s ease forwards;
 }
 
 .scale-up {
-	animation: scUP 0.3s ease forwards;
+  animation: scUP 0.3s ease forwards;
 }
 
 @keyframes scUP {
-	from {
-		opacity: 1;
-		transform: scale(1);
-	}
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
 
-	to {
-		opacity: 0;
-		transform: scale(1.5);
-	}
+  to {
+    opacity: 0;
+    transform: scale(1.5);
+  }
 }
 
 @keyframes fo {
-	from {
-		transform: scale(1);
-	}
-	to {
-		transform: scale(0);
-	}
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
 }
 
 @keyframes fn {
-	from {
-		transform: scale(0);
-	}
-	to {
-		transform: scale(1);
-	}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 @keyframes up {
-	from {
-		top: 30px;
-		opacity: 0;
-	}
+  from {
+    top: 30px;
+    opacity: 0;
+  }
 
-	to {
-		opacity: 1;
-		top: 0px;
-	}
+  to {
+    opacity: 1;
+    top: 0px;
+  }
 }
 
 @keyframes ltr {
-	from {
-		left: -30px;
-		opacity: 0;
-	}
-	to {
-		left: 0px;
-		opacity: 1;
-	}
+  from {
+    left: -30px;
+    opacity: 0;
+  }
+  to {
+    left: 0px;
+    opacity: 1;
+  }
 }
 
 @keyframes rtl {
-	from {
-		left: 30px;
-		opacity: 0;
-	}
-	to {
-		left: 0px;
-		opacity: 1;
-	}
+  from {
+    left: 30px;
+    opacity: 0;
+  }
+  to {
+    left: 0px;
+    opacity: 1;
+  }
 }
 
 @keyframes ttb {
-	from {
-		top: -30px;
-		opacity: 0;
-	}
-	to {
-		top: 0px;
-		opacity: 1;
-	}
+  from {
+    top: -30px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes rInf {
+  from {
+    transform: rotate(-deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
 }

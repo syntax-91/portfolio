@@ -1,68 +1,74 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 :root {
-	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-	line-height: 1.5;
-	font-weight: 400;
+  --mainPrimary: #535bf2;
 
-	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
-	background-color: #111010;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  color-scheme: light dark;
+  color: rgba(230, 228, 228, 0.87);
+  background-color: #080808;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* плавная прокрутка */
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 a {
-	font-weight: 500;
-	color: #bdbdc0;
-	cursor: pointer;
-	text-decoration: inherit;
+  font-weight: 500;
+  color: #bdbdc0;
+  cursor: pointer;
+  text-decoration: inherit;
 }
 a:hover {
-	color: #535bf2;
+  color: var(--mainPrimary);
 }
 
 body {
-	margin: 0;
-	min-width: 320px;
-	min-height: 100vh;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
 h1 {
-	font-size: 3.2em;
-	line-height: 1.1;
+  font-size: 3.2em;
+  line-height: 1.1;
 }
 
 button {
-	transition: all 0.3s ease-in-out;
-	border-radius: 40px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 40px;
 
-	border: 1px solid transparent;
-	padding: 0.6em 1.2em;
-	font-size: 1em;
-	font-weight: 500;
-	font-family: inherit;
-	background-color: #343333;
-	cursor: pointer;
-	transition: border-color 0.25s;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #343333;
+  cursor: pointer;
+  transition: border-color 0.25s;
 }
 button:hover {
-	border: 1px solid #9d9da0;
+  border: 1px solid #9d9da0;
 }
 
 i {
-	color: rgb(13, 13, 223);
-	cursor: pointer;
+  color: rgb(101, 101, 105);
+  cursor: pointer;
+}
+
+h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 * {
-	transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
