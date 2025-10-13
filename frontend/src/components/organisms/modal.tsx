@@ -3,7 +3,6 @@ import { observer } from "mobx-react-lite";
 import { themeConfig } from "../../app/configs/themeConfig";
 import s from "../../shared/styles/modalStyles.module.css";
 import { modalStore } from "../../app/store/modalStore";
-import { Button } from "../atoms/Button";
 
 export type TModal = "info" | "prompt" | "error";
 
@@ -38,21 +37,16 @@ function Modal({ titleBtn = "хорошо", theme = "dark" }: ModalProps) {
         style={{
           background: themeConfig.themes.dark.bb,
         }}
-        className={` fn  
-				${s[theme]} ${s["modal"]}
-				${modalStore.isClosing === true && "scale-up"}`}
+        className={`fn  
+				${s[theme]} ${s["modal"]}`}
       >
         <p className="text-center">{modalStore.title}</p>
 
         <p className="text-center max-w-[95%] py-2">{modalStore.msg}</p>
 
-        <Button
-          theme={theme}
-          onClick={handleClick}
-          label={titleBtn}
-          location="center"
-          max_w={100}
-        />
+        <button className="w-full" onClick={handleClick}>
+          {titleBtn}
+        </button>
       </div>
       {/**/}
     </div>

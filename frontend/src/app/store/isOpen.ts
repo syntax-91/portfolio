@@ -1,17 +1,17 @@
-import { makeAutoObservable } from 'mobx'
+import { makeAutoObservable } from "mobx";
 
 class isOpenMenuMobile {
-	isOpenMap = {
-		menuMobile: false,
-	}
+  isOpenMap = {
+    menuMobile: false,
+  };
 
-	constructor() {
-		makeAutoObservable(this)
-	}
+  constructor() {
+    makeAutoObservable(this);
+  }
 
-	setIsOpen(type: keyof typeof this.isOpenMap, value: boolean) {
-		this.isOpenMap[type] = value
-	}
+  setIsOpen(type: keyof typeof this.isOpenMap, value: boolean) {
+    this.isOpenMap[type] = value;
+  }
 }
 
-export const isOpenStore = new isOpenMenuMobile()
+export const isOpenStore = new isOpenMenuMobile();

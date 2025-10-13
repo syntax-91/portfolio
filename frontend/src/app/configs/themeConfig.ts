@@ -3,7 +3,7 @@ export const themeConfig = {
     light: {},
     dark: {
       //blockBg
-      bb: "#101010",
+      bb: "#0f0f0fff",
     },
   },
 };
