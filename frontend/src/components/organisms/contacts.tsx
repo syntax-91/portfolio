@@ -2,6 +2,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useEffect, useRef } from "react";
 import { SiGithub, SiTelegram } from "react-icons/si";
+import { themeConfig } from "../../app/configs/themeConfig";
 
 export function Contacts() {
   const boxRef = useRef(null);
@@ -43,7 +44,12 @@ export function Contacts() {
 
       {/* Github */}
       <div onClick={() => (location.href = "https://github.com/syntax-91")}>
-        <div className={`${elCls} bg-[#101010]`}>
+        <div
+          style={{
+            background: themeConfig.themes.dark.bb,
+          }}
+          className={`${elCls} border border-white/10`}
+        >
           <SiGithub size={30} />
           <p>Github</p>
         </div>
@@ -54,7 +60,12 @@ export function Contacts() {
         onClick={() => (location.href = "https://t.me/syntax_real")}
         className={`${elCls}`}
       >
-        <div className={`${elCls} bg-blue-700`}>
+        <div
+          style={{
+            background: themeConfig.themes.dark.bb,
+          }}
+          className={`${elCls} border border-white/10`}
+        >
           <SiTelegram size={30} />
           <p>Telegram</p>
         </div>
