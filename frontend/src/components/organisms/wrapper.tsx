@@ -1,8 +1,8 @@
 export function Wrapper() {
   return (
     <div
-      className="w-[95%] md:w-[80%] lg:w-[60%] mx-auto flex justify-between ttb py-5
-		items-center  mt-15 md:mt-30 gap-10 md:px-8 rounded-4xl"
+      className="w-[95%] md:w-[80%] lg:w-[70%] mx-auto flex justify-between ttb py-5
+		items-center  mt-15 md:mt-30 gap-30 md:px-8 rounded-4xl"
       id="About_me"
     >
       {/* block 1 */}
